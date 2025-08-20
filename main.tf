@@ -2,7 +2,6 @@ provider "google" {
   project     = "airy-rock-378805"
   region      = "us-central1"
   zone        = "us-central1-a"
-  credentials = file("gcp-key.json")
 }
 
 resource "google_compute_instance" "jenkins_vm" {
